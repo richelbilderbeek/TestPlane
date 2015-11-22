@@ -14,8 +14,8 @@
    <string>TestPlane</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="ToolTestPlane.qrc">
-    <normaloff>:/images/ToolTestPlaneR.png</normaloff>:/images/ToolTestPlaneR.png</iconset>
+   <iconset resource="TestPlane.qrc">
+    <normaloff>:/images/TestPlaneR.png</normaloff>:/images/TestPlaneR.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog { 
@@ -73,7 +73,7 @@ accuracy, Qwt</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolTestPlane.qrc">:/images/ToolTestPlaneAccuracy.png</pixmap>
+      <pixmap resource="TestPlane.qrc">:/images/TestPlaneAccuracy.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -114,7 +114,7 @@ plane</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolTestPlane.qrc">:/images/ToolTestPlaneConstruct.png</pixmap>
+      <pixmap resource="TestPlane.qrc">:/images/TestPlaneConstruct.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>false</bool>
@@ -130,7 +130,7 @@ plane</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolTestPlane.qrc">:/images/ToolTestPlaneAccuracyRibi.png</pixmap>
+      <pixmap resource="TestPlane.qrc">:/images/TestPlaneAccuracyRibi.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -141,7 +141,7 @@ plane</string>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="ToolTestPlane.qrc"/>
+  <include location="TestPlane.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -36,7 +36,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include "plane.h"
 #include "testtimer.h"
 #include "ribi_regex.h"
-#include "richelbilderbeekprogram.h"
 #include "trace.h"
 #pragma GCC diagnostic pop
 
@@ -180,18 +179,9 @@ ribi::Help ribi::TestPlaneMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::TestPlaneMenuDialog::GetProgram() const noexcept
-{
-  boost::shared_ptr<const ribi::Program> p {
-    new ribi::ProgramTestPlane
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::TestPlaneMenuDialog::GetVersion() const noexcept
 {
-  return "1.7";
+  return "2.0";
 }
 
 std::vector<std::string> ribi::TestPlaneMenuDialog::GetVersionHistory() const noexcept
@@ -204,7 +194,8 @@ std::vector<std::string> ribi::TestPlaneMenuDialog::GetVersionHistory() const no
     "2014-07-07: version 1.4: investigate Plane::IsInPlane in desktop version",
     "2014-07-10: version 1.5: use of apfloat in Plane",
     "2014-07-15: version 1.6: multiple bugfixes",
-    "2014-08-07: version 1.7: added silent flag to console version"
+    "2014-08-07: version 1.7: added silent flag to console version",
+    "2015-11-22: version 2.0: moved to own GitHub",
   };
 }
 
@@ -215,6 +206,12 @@ void ribi::TestPlaneMenuDialog::Test() noexcept
     static bool is_tested{false};
     if (is_tested) return;
     is_tested = true;
+  }
+  {
+    const Plane::Coordinat3D p1( 1.0, 2.0,3.0);
+    const Plane::Coordinat3D p2( 4.0, 6.0,9.0);
+    const Plane::Coordinat3D p3(12.0,11.0,9.0);
+    const Plane p(p1,p2,p3);
   }
   const TestTimer test_timer(__func__,__FILE__,1.0);
   const bool verbose{false};

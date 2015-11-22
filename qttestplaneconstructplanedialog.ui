@@ -14,8 +14,8 @@
    <string>TestPlane</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="ToolTestPlane.qrc">
-    <normaloff>:/images/ToolTestPlaneR.png</normaloff>:/images/ToolTestPlaneR.png</iconset>
+   <iconset resource="TestPlane.qrc">
+    <normaloff>:/images/TestPlaneR.png</normaloff>:/images/TestPlaneR.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog { 
@@ -253,7 +253,7 @@ QPlainTextEdit { font: 12px &quot;Courier New&quot;, courier, monospace }</strin
   </layout>
  </widget>
  <resources>
-  <include location="ToolTestPlane.qrc"/>
+  <include location="TestPlane.qrc"/>
  </resources>
  <connections/>
 </ui>
